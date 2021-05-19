@@ -1,0 +1,151 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "version": 1,
+  "newProjectRoot": "projects",
+  "projects": {
+    "bluenovelty": {
+      "projectType": "application",
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss"
+        },
+        "@schematics/angular:application": {
+          "strict": true
+        }
+      },
+      "root": "",
+      "sourceRoot": "src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/bluenovelty",
+            "index": "src/index.html",
+            "main": "src/main.ts",
+            "polyfills": "src/polyfills.ts",
+            "tsConfig": "tsconfig.app.json",
+            "aot": true,
+            "assets": [
+              "src/favicon.ico",
+              "src/assets"
+            ],
+            "styles": [
+              "src/styles.scss",
+              "src/assets/css/stuck.css",
+		"src/assets/css/owl.carousel.css",
+		"src/assets/css/form.css",
+		"src/assets/css/touchTouch.css",
+		"src/assets/css/camera.css",
+		"src/assets/css/style.css"
+            ],
+            "scripts": ["./node_modules/jquery/dist/jquery.min.js",
+            "src/assets/js/jquery.js",
+              "src/assets/js/jquery-migrate-1.1.1.js",
+              "src/assets/js/script.js",
+              "src/assets/js/superfish.js",
+              "src/assets/js/jquery.equalheights.js",
+              "src/assets/js/jquery.mobilemenu.js",
+              "src/assets/js/jquery.easing.1.3.js",
+              "src/assets/js/tmStickUp.js",
+              "src/assets/js/jquery.ui.totop.js",
+              "src/assets/js/touchTouch.jquery.js",
+              "src/assets/js/owl.carousel.js",
+              "src/assets/js/sForm.js",
+              "src/assets/js/camera.js",
+              "src/assets/js/jquery.mobile.customized.min.js"]
+          },
+          "configurations": {
+            "production": {
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.prod.ts"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "namedChunks": false,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "500kb",
+                  "maximumError": "1mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "2kb",
+                  "maximumError": "4kb"
+                }
+              ]
+            }
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "bluenovelty:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "bluenovelty:build:production"
+            }
+          }
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "bluenovelty:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "src/test.ts",
+            "polyfills": "src/polyfills.ts",
+            "tsConfig": "tsconfig.spec.json",
+            "karmaConfig": "karma.conf.js",
+            "assets": [
+              "src/favicon.ico",
+              "src/assets"
+            ],
+            "styles": [
+              "src/styles.scss"
+            ],
+            "scripts": []
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "tsconfig.app.json",
+              "tsconfig.spec.json",
+              "e2e/tsconfig.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        },
+        "e2e": {
+          "builder": "@angular-devkit/build-angular:protractor",
+          "options": {
+            "protractorConfig": "e2e/protractor.conf.js",
+            "devServerTarget": "bluenovelty:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "bluenovelty:serve:production"
+            }
+          }
+        }
+      }
+    }
+  },
+  "defaultProject": "bluenovelty"
+}

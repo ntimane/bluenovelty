@@ -1,0 +1,13 @@
+/* To learn more about this file see: https://angular.io/config/tsconfig. */
+{
+  "extends": "/assets/imagestsconfig.json",
+  "compilerOptions": {
+    "outDir": "/assets/imagesout-tsc/e2e",
+    "module": "commonjs",
+    "target": "es2018",
+    "types": [
+      "jasmine",
+      "node"
+    ]
+  }
+}
