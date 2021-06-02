@@ -65,7 +65,8 @@ export class AppComponent {
       (<any>$('.gallery a.gal_item')).touchTouch();
     });
   }
-  nav(myNavigator=''){
-    this.router.navigate([myNavigator]);
+  nav(value:string){
+    console.log(value);
+    // this.router.navigate([value]);
   }
 }

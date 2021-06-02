@@ -1,25 +1,55 @@
-.tutorial_text{
+.tutorial_text {
     position: absolute;
     width: 80px;
     color: black;
     font-weight: bolder;
 }
-.tutorial_text1{
+
+.tutorial_text1,
+.tutorial_text2 {
+    border-radius: 10px;
+    border: black solid thin;
+    color: white;
+    background-color: rgb(46, 40, 40);
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.tutorial_text1:hover,
+.tutorial_text2:hover {
+    border-radius: 10px;
+    border: black solid thin;
+    color: #1a3fe2;
+    background-color: white;
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.tutorial_text1 {
     top: 330px;
     left: 250px;
-    border-radius: 10px;
-    border: black solid thin;
     padding: 10px;
 }
-.tutorial_text2{
-    top: 140px;
-    left: 690px;
-    border-radius: 10px;
-    border: black solid thin;
+
+.tutorial_text2 {
+    top: 120px;
+    left: 660px;
     padding: 5px;
     padding-right: 20px;
 }
-.tutorial_holder{
+
+.tutorial_holder {
     padding-left: 15.5%;
     display: inline-block;
+}
+
+#logo {
+    font-family: 'Bahnschrift', Courier, monospace;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 10px;
+    border: solid white thin;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
