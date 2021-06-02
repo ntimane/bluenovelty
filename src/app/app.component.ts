@@ -1,5 +1,6 @@
 import { Component,OnInit } from '@angular/core';
 import { Input} from "@angular/core";
+import { ActivatedRoute,Router } from '@angular/router';
 
 import * as $ from 'jquery';
 
@@ -34,6 +35,8 @@ export class AppComponent {
       thumbImage: 'https://sanjayv.github.io/ng-image-slider/contents/assets/img/slider/2.jpg',
       // title: 'Example two with title.'
   }];
+
+  constructor(private router: Router) {}
   ngOnInit() {
     //get advert gallery
     this.adGallery = [{name:'img1',src:'source'},{name:'img1',src:'source'}];
@@ -61,5 +64,8 @@ export class AppComponent {
       (<any>$('#stuck_container')).tmStickUp({});
       (<any>$('.gallery a.gal_item')).touchTouch();
     });
+  }
+  nav(myNavigator=''){
+    this.router.navigate([myNavigator]);
   }
 }

@@ -71,11 +71,11 @@ nav{ position:relative;padding: 0px 0 0 0;}
 }
 
 .sf-menu>li.sfHover>a, .sf-menu>li.current>a, .sf-menu>li>a:hover {
-	color: #dd6d8c;
+	color: #1a3fe2;
 }
 
 .sf-menu>li.sfHover>a:after, .sf-menu>li.current>a:after, .sf-menu>li>a:hover:after {
-	border-top-color: #dd6d8d;
+	border-top-color: #1a3fe2;
 }
 
 

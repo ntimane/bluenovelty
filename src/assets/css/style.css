@@ -72,7 +72,7 @@ img {
 
 
 h1, h2, h3, h4, h5, h6 {
-    color: #dd6d8c;
+    color: #1a3fe2;
     font-weight: bold;
 
     text-align: center;
@@ -565,7 +565,7 @@ header h1 a img {
 /**Map**/
 
 .color1 {
-    color: #dd6d8c;
+    color: #1a3fe2;
 }
 
 .color1 a:hover, a.color1:hover {
@@ -667,7 +667,7 @@ footer {
 }
 
 .footer_socials .fa:hover {
-    background-color: #dd6d8c;
+    background-color: #1a3fe2;
 }
 
 .footer_socials .fa.fa-pinterest {
