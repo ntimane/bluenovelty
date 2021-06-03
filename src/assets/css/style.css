@@ -73,10 +73,10 @@ h3,
 h4,
 h5,
 h6 {
-    color: #1a3fe2;
+    color: #fff;
     font-weight: bold;
     text-align: center;
-    font-family: 'BenchNine', 'sans-serif';
+    font-family: 'Helvetica', 'sans-serif';
 }
 
 h2 {
@@ -156,7 +156,7 @@ ul {
 }
 
 .list li:after {
-    font-family: 'FontAwesome';
+    font-family: 'Helvetica';
     content: '';
     font-size: 20px;
     line-height: 20px;
@@ -892,4 +892,42 @@ footer {
     .sub_copy {
         font-size: 13px;
     }
+}
+
+form.example input[type=text] {
+  padding: 9px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 75%;
+  background: #f1f1f1;
+}
+
+/* Style the submit button */
+form.example button {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: #000;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none; /* Prevent double borders */
+  cursor: pointer;
+}
+
+form.example button:hover {
+  background: #0b7dda;
+}
+
+/* Clear floats */
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.search{
+  width: 35%;
+  float:right;
+  margin-left: 29px;
 }

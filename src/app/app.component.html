@@ -1,20 +1,29 @@
 <!--==============================header=================================-->
 <header>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <div id="stuck_container">
         <div class="container">
             <div class="row">
                 <div class="grid_12">
-                    <h1 id="logo">Bluenovelty
+                    <h1 id="logo">Blue Novelty
                         <a href="index.html" style="font-family:'Bahnschrift', Courier, monospace;">
 								Bluenovelty
 							</a>
                     </h1>
+                    <div class="search">
+                    <form class="example" action="/action_page.php">
+<input type="text" placeholder="Search.." name="search">
+<button type="submit"><i class="fa fa-search"></i></button>
+</form>
+</div>
+
                     <div class="menu_block">
                         <nav class="horizontal-nav full-width horizontalNav-notprocessed">
                             <ul class="sf-menu">
-                                <li><input class="form-control" type="text" placeholder="Search...."></li>
-                                <li><a (click)="nav('login')">Login</a></li>
-                                <li><a (click)="nav('sign-up')">Sign up</a></li>
+
+
+                                <li><a (click)="nav('login')">LOGIN</a></li>
+                                <li><a (click)="nav('sign-up')">SIGN UP</a></li>
                             </ul>
                         </nav>
                         <div class="clear"></div>
@@ -25,27 +34,30 @@
     </div>
 </header>
 <div class="main"><br>
+  <hr>
     <div class="tutorial_holder">
-        <img src="/assets/images/tutorial1.JPG" style="width: 435px;height: 400px; border-radius: 10px;">
+        <img src="/assets/images/home1.jpg" style="width: 715px;height: 400px;">
         <p class="tutorial_text tutorial_text1">Take your freelance career in content creation to the next level.
         </p>
         <!-- <div style="width: 300px;height: 300px; border: dotted thin white;border-radius: 20px; float: left;">img left</div> -->
         <span>&nbsp;&nbsp;&nbsp;</span>
         <!-- <div style="width: 300px;height: 300px; border: dotted thin white; border-radius: 20px; float: left;">img right</div> -->
-        <img src="/assets/images/tutorial2.jpg" style="width: 435px;height: 400px; border-radius: 10px;">
+        <img src="/assets/images/home2.jpg" style="width: 686px;height: 400px;">
         <p class="tutorial_text tutorial_text2">“Book a Photographer or freelance career in content creating Videographer Now.”.
         </p>
     </div><br><br>
+    <hr>
     <div style="max-width: 70%;margin-left: 15%; border-radius: 10px;">
         <ng-image-slider [images]="imageObject" [infinite]="false" [autoSlide]="0" [imageSize]="{width: '25%', height: 200}" slideImage="0"></ng-image-slider>
     </div><br>
     <!--=====================Content======================-->
-
+<hr>
+<br>
     <section class="content">
         <div class="container">
             <div class="row">
                 <div class="grid_12">
-                    <h2>Profiles</h2>
+                    <h2>Photogaphers</h2>
                     <div class="gallery">
                         <div class="row">
                             <div class="grid_4">
@@ -54,12 +66,15 @@
                                         <div class="">
                                             <div class="" aria-disabled="false" role="button" tabindex="0">
                                                 <span class="_2dbep " role="link" style="width: 52px; height: 52px;">
-														<img alt="profile image" class="" style="padding-top: 10px; padding-left: 10px; width: 52px; height: 52px; border-radius: 30px;" data-testid="user-avatar" draggable="false" 
-														src="/assets/images/ph1.jpg">
+														<img alt="profile image" class="" style="padding-top: 10px; padding-left: 10px; width: 52px; height: 52px; border-radius: 30px;" data-testid="user-avatar" draggable="false"
+														src="/assets/images/28feb-edits-30.jpg">
 													</span>&nbsp;
                                                 <span class="">
-														<a class="" href="/assets/images/ph1.jpg" tabindex="0" style="padding-top: 50px;color: white;">Tebogo Thale</a>
+														<a class="photog_name" href="/assets/images/28feb-edits-11.jpg"  >Tebogo Thale</a>
+														<br><div class="photo_type"><strong>Arts, Adventure, Weddings</strong></div>
 													</span>
+                          <a href="#">Book Now</a>
+
                                             </div>
                                         </div>
                                     </header>
@@ -67,7 +82,7 @@
                                     <div class="">
                                         <div class="gal_item" role="button" tabindex="-1">
                                             <div class="" style="width: 100%;">
-                                                <img alt="Photographers Photo" class="" style="object-fit: cover;width: 100%;" src="/assets/images/ph1.jpg">
+                                                <img alt="Photographers Photo" class="" style="object-fit: cover;width: 100%;" src="/assets/images/28 feb-edits-30.jpg">
                                                 <div class="gal_caption">Tebogo Thale</div>
                                                 <span class="gal_magnify"></span>
                                             </div>
@@ -81,11 +96,12 @@
                                         <div class="">
                                             <div class="" aria-disabled="false" role="button" tabindex="0">
                                                 <span class="_2dbep " role="link" style="width: 52px; height: 52px;">
-														<img alt="profile image" class="" style="padding-top: 10px; padding-left: 10px; width: 52px; height: 52px; border-radius: 30px;" data-testid="user-avatar" draggable="false" 
+														<img alt="profile image" class="" style="padding-top: 10px; padding-left: 10px; width: 52px; height: 52px; border-radius: 30px;" data-testid="user-avatar" draggable="false"
 														src="/assets/images/ph2.jpg">
+
 													</span>&nbsp;
                                                 <span class="">
-														<a class="" href="/assets/images/ph2.jpg" tabindex="0" style="padding-top: 50px;color: white;">Katlego Ntimane</a>
+														<a class="" href="/assets/images/28 feb - edits-31.jpg" tabindex="0" style="padding-top: 50px;color: white;">Katlego Ntimane</a>
 													</span>
                                             </div>
                                         </div>
@@ -108,7 +124,7 @@
                                         <div class="">
                                             <div class="" aria-disabled="false" role="button" tabindex="0">
                                                 <span class="_2dbep " role="link" style="width: 52px; height: 52px;">
-														<img alt="profile image" class="" style="padding-top: 10px; padding-left: 10px; width: 52px; height: 52px; border-radius: 30px;" data-testid="user-avatar" draggable="false" 
+														<img alt="profile image" class="" style="padding-top: 10px; padding-left: 10px; width: 52px; height: 52px; border-radius: 30px;" data-testid="user-avatar" draggable="false"
 														src="/assets/images/ph3.jpg">
 													</span>&nbsp;
                                                 <span class="">
@@ -135,11 +151,11 @@
                                         <div class="">
                                             <div class="" aria-disabled="false" role="button" tabindex="0">
                                                 <span class="_2dbep " role="link" style="width: 52px; height: 52px;">
-														<img alt="profile image" class="" style="padding-top: 10px; padding-left: 10px; width: 52px; height: 52px; border-radius: 30px;" data-testid="user-avatar" draggable="false" 
+														<img alt="profile image" class="" style="padding-top: 10px; padding-left: 10px; width: 52px; height: 52px; border-radius: 30px;" data-testid="user-avatar" draggable="false"
 														src="/assets/images/ph4.jpg">
 													</span>&nbsp;
                                                 <span class="">
-														<a class="" href="/assets/images/ph4.jpg" tabindex="0" style="padding-top: 50px;color: white;">Karabo Adams</a>
+														<a class="" href="/assets/images/28 feb - edits-25.jpg" tabindex="0" style="padding-top: 50px;color: white;">Karabo Adams</a>
 													</span>
                                             </div>
                                         </div>
@@ -162,11 +178,11 @@
                                         <div class="">
                                             <div class="" aria-disabled="false" role="button" tabindex="0">
                                                 <span class="_2dbep " role="link" style="width: 52px; height: 52px;">
-														<img alt="profile image" class="" style="padding-top: 10px; padding-left: 10px; width: 52px; height: 52px; border-radius: 30px;" data-testid="user-avatar" draggable="false" 
+														<img alt="profile image" class="" style="padding-top: 10px; padding-left: 10px; width: 52px; height: 52px; border-radius: 30px;" data-testid="user-avatar" draggable="false"
 														src="/assets/images/ph5.jpg">
 													</span>&nbsp;
                                                 <span class="">
-														<a class="" href="/assets/images/ph5.jpg" tabindex="0" 
+														<a class="" href="/assets/images/ph5.jpg" tabindex="0"
 														style="padding-top: 50px;color: white;">Kopano Sibiya</a>
 													</span>
                                             </div>
@@ -190,11 +206,11 @@
                                         <div class="">
                                             <div class="" aria-disabled="false" role="button" tabindex="0">
                                                 <span class="_2dbep " role="link" style="width: 52px; height: 52px;">
-														<img alt="profile image" class="" style="padding-top: 10px; padding-left: 10px; width: 52px; height: 52px; border-radius: 30px;" data-testid="user-avatar" draggable="false" 
+														<img alt="profile image" class="" style="padding-top: 10px; padding-left: 10px; width: 52px; height: 52px; border-radius: 30px;" data-testid="user-avatar" draggable="false"
 														src="/assets/images/ph6.jpg">
 													</span>&nbsp;
                                                 <span class="">
-														<a class="" href="/assets/images/ph6.jpg" tabindex="0" 
+														<a class="" href="/assets/images/ph6.jpg" tabindex="0"
 														style="padding-top: 50px;color: white;">Lebogang Mutaung</a>
 													</span>
                                             </div>
@@ -265,7 +281,7 @@
                 <div class="copy">
                     <span class="brand">Blue Novelty</span> &copy; <span id="copyright-year"></span> | <a href="#">Privacy Policy</a>
                     <div class="sub_copy">
-                        Website designed by <a href="http://www.mit.co.za" rel="nofollow">mit.co.za</a>
+                        Developed by <a href="http://www.mitconsulting.co.za" rel="nofollow">mitconsulting.co.za</a>
                     </div>
                 </div>
             </div>
