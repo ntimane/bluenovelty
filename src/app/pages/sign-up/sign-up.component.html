@@ -1,92 +1,170 @@
-
 <!--==============================header=================================-->
 <header>
-    <div id="stuck_container">
-        <div class="container">
-            <div class="row">
-                <div class="grid_12">
-                    <h1>
-                        <a href="index.html" style="font-family:'Courier New', Courier, monospace;">
-                            <img src="/assets/images/bluenovelty.JPG" width="300px" height="70px" style="border-radius: 20px;">
-                        </a>
-                    </h1>
-                    <div class="menu_block">
-                        <nav class="horizontal-nav full-width horizontalNav-notprocessed">
-                            <ul class="sf-menu">
-                                <li><input class="form-control" type="text" placeholder="Search...."></li>
-                                <li><a (click)="nav('login')">Login</a></li>
-                                <li><a (click)="nav('sign-up')">Sign up</a></li>
-                            </ul>
-                        </nav>
-                        <div class="clear"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <div id="stuck_container">
+          <div class="container">
+              <div class="row">
+                  <div class="grid_12">
+                      <h1 id="logo">Blue Novelty
+                          <a href="index.html" style="font-family:'Bahnschrift', Courier, monospace;">
+                                  Bluenovelty
+                              </a>
+                      </h1>
+                      <div class="search">
+                      <form class="example" action="/action_page.php">
+  <input type="text" placeholder="Search.." name="search">
+  <button type="submit"><i class="fa fa-search"></i></button>
+  </form>
+  </div>
+  
+                      <div class="menu_block">
+                          <nav class="horizontal-nav full-width horizontalNav-notprocessed">
+                              <ul class="sf-menu">
+  
+  
+                                  <li><a (click)="nav('login')">LOGIN</a></li>
+                                  <li><a (click)="nav('sign-up')">SIGN UP</a></li>
+                              </ul>
+                          </nav>
+                          <div class="clear"></div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </header>
+  <div class="main"><br>
+    <div class="signup_info">
+        <div>
+            <ul style="padding:10px;">
+                <li class="item"><label class="signin_label" style="padding-right: 250px;">Name&nbsp;:&nbsp;</label>
+                <input class="form-control" type="text"></li>
+                <li class="item"><label class="signin_label" style="padding-right: 211px;">Surname&nbsp;:&nbsp;</label>
+                <input class="form-control" type="text"></li>
+                <li class="item"><label class="signin_label" style="padding-right: 137px;">Company Name&nbsp;:&nbsp;</label>
+                <input class="form-control" type="text"></li>
+                <li class="item"><label class="signin_label" style="padding-right: 250px;">Email&nbsp;:&nbsp;</label>
+                <input class="form-control" type="text"></li>
+                <li class="item"><label class="signin_label" style="padding-right: 255px;">D.O.B&nbsp;:&nbsp;</label>
+                <input class="form-control" type="text"></li>
+                <li class="item"><label class="signin_label" style="padding-right: 228px;">Gender&nbsp;:&nbsp;</label>
+                <select>
+                    <option></option>
+                    <option>Male</option>
+                    <option>Female</option>
+                </select></li>
+                <li class="item"><label class="signin_label" style="padding-right: 165px;">Content Type&nbsp;:&nbsp;</label>
+                    <select>
+                    <option></option>
+                    <option>Photography</option>
+                    <option>Videography</option>
+                </select></li>
+                <li class="item"><label class="signin_label" style="padding-right: 10px;">Which field of photography&nbsp;:&nbsp;</label>
+                    <select>
+                        <option></option>
+                        <option>Advertisement</option>
+                        <option>Aerial</option>
+                        <option>Architectural/Real Estate</option>
+                        <option>Black and White</option>
+                        <option>Event</option>
+                        <option>Fashion</option>
+                        <option>Food</option>
+                        <option>Landscape</option>
+                        <option>Lifestyle</option>
+                        <option>Maternity</option>
+                        <option>Pet</option>
+                        <option>Photojournalism</option>
+                        <option>Portrait</option>
+                        <option>Product</option>
+                        <option>Sports</option>
+                        <option>Studio</option>
+                        <option>Travel</option>
+                        <option>Wildlife</option>
+                        <option>Wedding</option>
+                    </select></li>
+                        <li class="item"><label class="signin_label" style="padding-right: 10px;">Which field of photography&nbsp;:&nbsp;</label>
+                        <select>
+                                <option>Aerial (Drone)</option>
+                                <option>Time-Lapse</option>
+                                <option>Vlog</option>
+                                <option>Architectural Photographer</option>
+                                <option>Advertisement</option>
+                                <option>Aerial</option>
+                                <option>Architectural/Real Estate</option>
+                                <option>Black and White</option>
+                                <option>Event</option>
+                                <option>Fashion</option>
+                                <option>Food</option>
+                                <option>Landscape</option>
+                                <option>Lifestyle</option>
+                                <option>Maternity</option>
+                                <option>Pet</option>
+                                <option>Photojournalism</option>
+                                <option>Portrait</option>
+                                <option>Product</option>
+                                <option>Sports</option>
+                                <option>Studio</option>
+                                <option>Travel</option>
+                                <option>Wildlife</option>
+                                <option>Wedding</option>
+                            </select></li>
+            </ul>
+            <button type="button" class="btn bt__2">Submit</button>
+            <button type="button" class="btn btn-warning">Clear</button>
+        </div>        
     </div>
-</header>
-<div class="main">
-    
-<!--=====================Content======================-->
-    
-    <section class="content">
-        <div class="container">
-            <div class="row">
-                <label>Name&nbsp;:&nbsp;</label><input class="form-control" type="text">
-            </div>
-        </div>
-        
-    </section>
-<!--==============================Bot_block=================================-->
-    <section class="bottom_block">
-        <div class="container">
-            <div class="row">
-                <div class="grid_5">
-                    <div class="bot_title">
-                        <span class="fa fa-envelope-o"></span>Subscribe to My Events
-                    </div>
-                </div>
-                <div class="grid_7">
-                    <form id="newsletter">
-                        <div class="row">
-                            <div class="" style="width: 370px;">
-                                <div class="rel">
-                                    <div class="success">Your subscrsibe request has been sent!</div>
-                                    <label class="email">
-                                        <input type="email" value="Your Email Address Here" >
-                                        <span class="error">*This is not a valid email address.</span>
-                                        <span class="clear"></span>
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="grid_3">
-                                <a href="#" class="btn bt__2" data-type="submit">Submit</a>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-</div>
-<!--==============================footer=================================-->
-<footer>
-    <div class="container">
-        <div class="row">
-            <div class="grid_12">
-                <div class="footer_socials">
-                    <a href="#" class="fa fa-twitter"></a>
-                    <a href="#" class="fa fa-facebook"></a>
-                    <a href="#" class="fa fa-google-plus"></a>
-                    <a href="#" class="fa fa-pinterest"></a>
-                </div>
-                <div class="copy">
-                    <span class="brand">Blue Novelty</span> &copy; <span id="copyright-year"></span> | <a href="#">Privacy Policy</a>
-                    <div class="sub_copy">
-                        Website designed by <a href="http://www.mit.co.za" rel="nofollow">mit.co.za</a>
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
-</footer>
+      <!--==============================Bot_block=================================-->
+      <section class="bottom_block">
+          <div class="container">
+              <div class="row">
+                  <div class="grid_5">
+                      <div class="bot_title">
+                          <span class="fa fa-envelope-o"></span>Subscribe to My Events
+                      </div>
+                  </div>
+                  <div class="grid_7">
+                      <form id="newsletter">
+                          <div class="row">
+                              <div class="" style="width: 370px;">
+                                  <div class="rel">
+                                      <div class="success">Your subscrsibe request has been sent!</div>
+                                      <label class="email">
+                                              <input type="email" value="Your Email Address Here" >
+                                              <span class="error">*This is not a valid email address.</span>
+                                              <span class="clear"></span>
+                                          </label>
+                                  </div>
+                              </div>
+                              <div class="grid_3">
+                                  <a href="#" class="btn bt__2" data-type="submit">Submit</a>
+                              </div>
+                          </div>
+                      </form>
+                  </div>
+              </div>
+          </div>
+      </section>
+  
+  <!--==============================footer=================================-->
+  <footer>
+      <div class="container">
+          <div class="row">
+              <div class="grid_12">
+                  <div class="footer_socials">
+                      <a href="#" class="fa fa-twitter"></a>
+                      <a href="#" class="fa fa-facebook"></a>
+                      <a href="#" class="fa fa-google-plus"></a>
+                      <a href="#" class="fa fa-pinterest"></a>
+                  </div>
+                  <div class="copy">
+                      <span class="brand">Blue Novelty</span> &copy; <span id="copyright-year"></span> | <a href="#">Privacy Policy</a>
+                      <div class="sub_copy">
+                          Developed by <a href="http://www.mitconsulting.co.za" rel="nofollow">mitconsulting.co.za</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </footer>
+  

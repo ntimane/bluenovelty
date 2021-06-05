@@ -4,9 +4,10 @@ import { NgImageSliderModule } from 'ng-image-slider';
 import { AppComponent } from './app.component';
 import { SignUpComponent } from './pages/sign-up/sign-up.component';
 import { LoginComponent } from './pages/login/login.component';
+import { HomeComponent } from './pages/home/home.component';
 
 const routes: Routes = [
-  { path: '', component: AppComponent },
+  { path: '', component: HomeComponent },
   { path: 'sign-up', component: SignUpComponent },
   { path: 'login', component: LoginComponent }
   // { path: '**', redirectTo: '' }
