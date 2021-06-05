@@ -1,13 +1,13 @@
 import { TestBed } from '@angular/core/testing';
 
-import { Api.GatewayService } from './api.gateway.service';
+import { ApiGatewayService } from './api-gateway.service';
 
-describe('Api.GatewayService', () => {
-  let service: Api.GatewayService;
+describe('ApiGatewayService', () => {
+  let service: ApiGatewayService;
 
   beforeEach(() => {
     TestBed.configureTestingModule({});
-    service = TestBed.inject(Api.GatewayService);
+    service = TestBed.inject(ApiGatewayService);
   });
 
   it('should be created', () => {

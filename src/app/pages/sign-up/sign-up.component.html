@@ -38,29 +38,29 @@
         <div>
             <ul style="padding:10px;">
                 <li class="item"><label class="signin_label" style="padding-right: 250px;">Name&nbsp;:&nbsp;</label>
-                <input class="form-control" type="text"></li>
+                <input class="form-control" type="text" [(ngModel)]="sign_up.name"></li>
                 <li class="item"><label class="signin_label" style="padding-right: 211px;">Surname&nbsp;:&nbsp;</label>
-                <input class="form-control" type="text"></li>
+                <input class="form-control" type="text" [(ngModel)]="sign_up.surname"></li>
                 <li class="item"><label class="signin_label" style="padding-right: 137px;">Company Name&nbsp;:&nbsp;</label>
-                <input class="form-control" type="text"></li>
+                <input class="form-control" type="text" [(ngModel)]="sign_up.company_name"></li>
                 <li class="item"><label class="signin_label" style="padding-right: 250px;">Email&nbsp;:&nbsp;</label>
-                <input class="form-control" type="text"></li>
+                <input class="form-control" type="text" [(ngModel)]="sign_up.email"></li>
                 <li class="item"><label class="signin_label" style="padding-right: 255px;">D.O.B&nbsp;:&nbsp;</label>
-                <input class="form-control" type="text"></li>
+                <input class="form-control" type="text" [(ngModel)]="sign_up.dob"></li>
                 <li class="item"><label class="signin_label" style="padding-right: 228px;">Gender&nbsp;:&nbsp;</label>
-                <select>
+                <select [(ngModel)]="sign_up.gender">
                     <option></option>
                     <option>Male</option>
                     <option>Female</option>
                 </select></li>
                 <li class="item"><label class="signin_label" style="padding-right: 165px;">Content Type&nbsp;:&nbsp;</label>
-                    <select>
+                    <select [(ngModel)]="sign_up.content_type">
                     <option></option>
                     <option>Photography</option>
                     <option>Videography</option>
                 </select></li>
                 <li class="item"><label class="signin_label" style="padding-right: 10px;">Which field of photography&nbsp;:&nbsp;</label>
-                    <select>
+                    <select [(ngModel)]="sign_up.which_photography">
                         <option></option>
                         <option>Advertisement</option>
                         <option>Aerial</option>
@@ -83,7 +83,7 @@
                         <option>Wedding</option>
                     </select></li>
                         <li class="item"><label class="signin_label" style="padding-right: 10px;">Which field of photography&nbsp;:&nbsp;</label>
-                        <select>
+                        <select [(ngModel)]="sign_up.which_photography1">
                                 <option>Aerial (Drone)</option>
                                 <option>Time-Lapse</option>
                                 <option>Vlog</option>
@@ -109,8 +109,8 @@
                                 <option>Wedding</option>
                             </select></li>
             </ul>
-            <button type="button" class="btn bt__2">Submit</button>
-            <button type="button" class="btn btn-warning">Clear</button>
+            <button type="button" class="btn bt__2 sign_btn">Submit</button>
+            <button type="button" class="btn bt__2 sign_btn">Clear</button>
         </div>        
     </div>
     </div>
