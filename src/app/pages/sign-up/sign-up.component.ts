@@ -26,6 +26,17 @@ export class SignUpComponent implements OnInit {
   nav(myNavigator=''){
     this.router.navigate([myNavigator]);
   }
+  clear(){
+    this.sign_up.name='';
+    this.sign_up.surname='';
+    this.sign_up.company_name='';
+    this.sign_up.email='';
+    this.sign_up.dob='';
+    this.sign_up.gender='';
+    this.sign_up.content_type='';
+    this.sign_up.which_photography='';
+    this.sign_up.which_photography1='';
+  }
   submit(){
     // await this.api.submitSignup
     try {

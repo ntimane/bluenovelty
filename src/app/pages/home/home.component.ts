@@ -11,12 +11,12 @@ export class HomeComponent implements OnInit {
   title = 'bluenovelty';
   adGallery:any;
   imageObject = [{
-      image: 'https://sanjayv.github.io/ng-image-slider/contents/assets/img/slider/5.jpg',
-      thumbImage: 'https://sanjayv.github.io/ng-image-slider/contents/assets/img/slider/5.jpg',
+      image: 'src="/assets/images/home2.jpg"',
+      thumbImage: '/asset/casourel1.jpg',
       // title: 'Hummingbirds are amazing creatures'
   }, {
       image: 'https://sanjayv.github.io/ng-image-slider/contents/assets/img/slider/9.jpg',
-      thumbImage: 'https://sanjayv.github.io/ng-image-slider/contents/assets/img/slider/9.jpg'
+      // thumbImage: 'https://sanjayv.github.io/ng-image-slider/contents/assets/img/slider/9.jpg'
   }, {
       image: 'https://sanjayv.github.io/ng-image-slider/contents/assets/img/slider/4.jpg',
       thumbImage: 'https://sanjayv.github.io/ng-image-slider/contents/assets/img/slider/4.jpg',
