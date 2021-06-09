@@ -13,8 +13,14 @@ export class LoginComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  nav(myNavigator:""){
+  nav(myNavigator=''){
     this.router.navigate([myNavigator]);
+  }
+  submit(){
+
+  }
+  clear(){
+    
   }
 
 }

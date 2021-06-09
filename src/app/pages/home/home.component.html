@@ -5,23 +5,16 @@
           <div class="container">
               <div class="row">
                   <div class="grid_12">
-                      <h1 id="logo">Blue Novelty
-                          <a href="index.html" style="font-family:'Bahnschrift', Courier, monospace;">
-                                  Bluenovelty
-                              </a>
-                      </h1>
+                    <h1 id="logo" (click)="nav('')">Blue Novelty</h1>
                       <div class="search">
                       <form class="example" action="/action_page.php">
   <input type="text" placeholder="Search.." name="search">
   <button type="submit"><i class="fa fa-search"></i></button>
   </form>
-  </div>
-  
+  </div>  
                       <div class="menu_block">
                           <nav class="horizontal-nav full-width horizontalNav-notprocessed">
                               <ul class="sf-menu">
-  
-  
                                   <li><a (click)="nav('login')">LOGIN</a></li>
                                   <li><a (click)="nav('sign-up')">SIGN UP</a></li>
                               </ul>
@@ -36,19 +29,19 @@
   <div class="main"><br>
     <hr>
       <div class="tutorial_holder">
-          <img src="/assets/images/home1.jpg" style="width: 715px;height: 400px;">
+          <img src="/assets/images/home1.jpg" style="width: 49%;height: 500px;">
           <p class="tutorial_text tutorial_text1">Take your freelance career in content creation to the next level.
           </p>
           <!-- <div style="width: 300px;height: 300px; border: dotted thin white;border-radius: 20px; float: left;">img left</div> -->
           <span>&nbsp;&nbsp;&nbsp;</span>
           <!-- <div style="width: 300px;height: 300px; border: dotted thin white; border-radius: 20px; float: left;">img right</div> -->
-          <img src="/assets/images/home2.jpg" style="width: 686px;height: 400px;">
+          <img src="/assets/images/home2.jpg" style="width: 49%;height: 500px;">
           <p class="tutorial_text tutorial_text2">“Book a Photographer or freelance career in content creating Videographer Now.”.
           </p>
       </div><br><br>
       <hr>
-      <div style="max-width: 70%;margin-left: 15%; border: solid thin white;">
-          <ng-image-slider [images]="imageObject" [infinite]="false" [autoSlide]="0" [imageSize]="{width: '25%', height: 200}" slideImage="2"></ng-image-slider>
+      <div style="max-width: 70%;margin-left: 15%;">
+          <ng-image-slider [images]="imageObject" [showArrow]="false" [imagePopup]="false" [infinite]="false" [autoSlide]="0" [imageSize]="{width: '25%', height: 200}" slideImage="2"></ng-image-slider>
       </div><br>
       <!--=====================Content======================-->
   <hr>
@@ -82,7 +75,7 @@
                                       <div class="">
                                           <div class="gal_item" role="button" tabindex="-1">
                                               <div class="" style="width: 100%;">
-                                                  <img alt="Photographers Photo" class="" style="object-fit: cover;width: 100%;" src="/assets/images/28 feb-edits-30.jpg">
+                                                  <img alt="Photographers Photo" class="" style="object-fit: cover;width: 100%;" src="/assets/images/28feb-edits-30.jpg">
                                                   <div class="gal_caption">Tebogo Thale</div>
                                                   <span class="gal_magnify"></span>
                                               </div>
