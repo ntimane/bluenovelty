@@ -1,3 +1,6 @@
+.home_image{
+    width: 49%;height: 500px;
+}
 .tutorial_text {
     position: absolute;
     width: 80px;
@@ -59,3 +62,19 @@
 .strip{
   background: #fff; 
 }
+@media only screen and (width: 580px) {
+    .home_image{
+        width: 45%;height: 500px;
+    }
+    .tutorial_text1 {
+        top: 25px;
+        left: 13px;
+        padding: 62px;
+    }
+    .tutorial_text2 {
+        top: 95px;
+        left: 16px;
+        padding: 90px;
+        padding-right: 45px;
+    }
+  }
