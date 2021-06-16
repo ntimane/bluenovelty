@@ -8,15 +8,21 @@
                     <h1 id="logo" (click)="nav('')">Blue Novelty</h1>
                       <div class="search">
                       <form class="example" action="/action_page.php">
-  <input type="text" placeholder="Search.." name="search">
+  <!--<input type="text" placeholder="Search.." name="search">-->
   <button type="submit"><i class="fa fa-search"></i></button>
   </form>
-  </div>  
+  </div>
                       <div class="menu_block">
                           <nav class="horizontal-nav full-width horizontalNav-notprocessed">
                               <ul class="sf-menu">
-                                  <li><a class="btn btn-primary" (click)="nav('login')">LOGIN</a></li>
+                                  <!--<li><a class="btn btn-primary" (click)="nav('login')">LOGIN</a></li>
                                   <li><a class="btn btn-primary" (click)="nav('sign-up')">SIGN UP</a></li>
+                                  <li><a (click)="nav('sign-up')">PHOTOGRAPHERS</a></li>
+                                  <li><a  (click)="nav('sign-up')">HOW TO REGISTER</a></li>-->
+                                  <li><a (click)="nav('login')">LOGIN </a></li>
+                                  <li><a  (click)="nav('sign-up')">SIGN UP</a></li>
+                                  <li><a (click)="nav('sign-up')">PHOTOGRAPHERS</a></li>
+                                  <li><a  (click)="nav('sign-up')">HOW TO REGISTER</a></li>
                               </ul>
                           </nav>
                           <div class="clear"></div>
@@ -30,27 +36,71 @@
     <hr>
       <div class="tutorial_holder">
           <img src="/assets/images/home1.jpg" class="home_image">
-          <p class="tutorial_text tutorial_text1">Take your freelance career in content creation to the next level.
-          </p>
+          <div class="tutorial_text tutorial_text1" responsive>Take your freelance career in content creation to the next level.
+          </div>
           <!-- <div style="width: 300px;height: 300px; border: dotted thin white;border-radius: 20px; float: left;">img left</div> -->
           <span>&nbsp;&nbsp;&nbsp;</span>
           <!-- <div style="width: 300px;height: 300px; border: dotted thin white; border-radius: 20px; float: left;">img right</div> -->
           <img src="/assets/images/home2.jpg" class="home_image">
-          <p class="tutorial_text tutorial_text2">“Book a Photographer or freelance career in content creating Videographer Now.”.
-          </p>
+          <div class="tutorial_text tutorial_text2" responsive>“Book a Photographer or freelance career in content creating Videographer Now.”.
+          </div>
       </div><br><br>
-      <hr>
-      <div style="max-width: 70%;margin-left: 15%;">
-          <ng-image-slider [images]="imageObject" [showArrow]="false" [imagePopup]="false" [infinite]="false" [autoSlide]="0" [imageSize]="{width: '25%', height: 200}" slideImage="2"></ng-image-slider>
-      </div><br>
+
       <!--=====================Content======================-->
-  <hr>
+<center>
+ <div class="gallery_main">
+   <div class="gallery2">
+
+  <a target="_blank" href="assets/images/photographer-selecting-photos-RZPRBXK.jpg">
+    <img src="assets/images/photographer-selecting-photos-RZPRBXK.jpg" alt="Cinque Terre">
+  </a>
+  <div class="desc">
+    <a (click)="nav('profile')">View Profile</a> |
+  <a (click)="nav('profile')">Book Now</a>
+
+  </div>
+</div>
+
+<div class="gallery2">
+  <a target="_blank" href="assets/images/page4_img1.jpg">
+    <img src="assets/images/page4_img1.jpg" alt="Forest">
+  </a>
+  <div class="desc">  <a (click)="nav('profile')">View Profile</a> |
+  <a  (click)="nav('profile')">Book Now</a>
+</div>
+</div>
+
+<div class="gallery2">
+  <a target="_blank" href="assets/images/professional-female.jpg">
+    <img src="assets/images/professional-female.jpg" alt="Northern Lights">
+  </a>
+  <div class="desc">
+    <a (click)="nav('profile')">View Profile</a> |
+  <a (click)="nav('profile')">Book Now</a>
+</div>
+
+</div>
+
+<div class="gallery2">
+  <a target="_blank" href="assets/images/casourel3.jpg">
+    <img src="assets/images/casourel3.jpg" alt="Mountains">
+  </a>
+  <div class="desc">
+    <a (click)="nav('profile')">View Profile</a> |
+  <a (click)="nav('profile')">Book Now</a>
+</div>
+
+</div>
+</div>
+</center>
   <br>
+    <hr>
+    <br>
       <section class="content">
           <div class="container">
               <div class="row">
                   <div class="grid_12">
-                      <h2>Photogaphers</h2>
+                      <h3>DISCOVER STUNNING GALLERY FROM THE WORLDS BEST CREATORS</h3>
                       <div class="gallery">
                           <div class="row">
                               <div class="grid_4">
@@ -67,7 +117,7 @@
                                                           <br><div class="photo_type"><strong>Arts, Adventure, Weddings</strong></div>
                                                       </span>
                             <a href="#">Book Now</a>
-  
+
                                               </div>
                                           </div>
                                       </header>
@@ -91,7 +141,7 @@
                                                   <span class="_2dbep " role="link" style="width: 52px; height: 52px;">
                                                           <img alt="profile image" class="" style="padding-top: 10px; padding-left: 10px; width: 52px; height: 52px; border-radius: 30px;" data-testid="user-avatar" draggable="false"
                                                           src="/assets/images/ph2.jpg">
-  
+
                                                       </span>&nbsp;
                                                   <span class="">
                                                           <a class="" href="/assets/images/28 feb - edits-31.jpg" tabindex="0" style="padding-top: 50px;color: white;">Katlego Ntimane</a>
@@ -226,7 +276,7 @@
                   </div>
               </div>
           </div>
-  
+
       </section>
       <!--==============================Bot_block=================================-->
       <section class="bottom_block">
@@ -281,4 +331,3 @@
           </div>
       </div>
   </footer>
-  

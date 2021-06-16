@@ -1,11 +1,15 @@
 .home_image{
-    width: 49%;height: 500px;
+    width: 49%;height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .tutorial_text {
     position: absolute;
     width: 80px;
     color: black;
-    font-weight: bolder;
+    font-weight: lighter;
+    font-size: xx-large;
 }
 
 .tutorial_text1,
@@ -13,7 +17,7 @@
     border: black solid thin;
     color: white;
     background-color: rgb(46, 40, 40);
-    opacity: 0.8;
+    opacity: 0.6;
     cursor: pointer;
 }
 
@@ -27,20 +31,28 @@
 }
 
 .tutorial_text1 {
-    top: 175px;
-    left: 413px;
-    padding: 82px;
+  top: 248px;
+  left: 0px;
+  padding: 86px;
+  width: 571px;
+  line-height: 1.1;
 }
 
 .tutorial_text2 {
-    top: 145px;
-    left: 716px;
-    padding: 90px;
-    padding-right: 65px;
+  top: 145px;
+  left: 755px;
+  padding: 86px;
+  width: 571px;
+  line-height: 1.1;
 }
 
 .tutorial_holder {
-    padding-left: 3.5%;
+    display: inline-block;
+}
+.tutorial_holder1 {
+    display: inline-block;
+}
+.tutorial_holder2 {
     display: inline-block;
 }
 
@@ -60,7 +72,7 @@
 
 }
 .strip{
-  background: #fff; 
+  background: #fff;
 }
 @media only screen and (width: 580px) {
     .home_image{
