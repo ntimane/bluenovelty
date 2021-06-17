@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute,Router } from '@angular/router';
 
 @Component({
-  selector: 'app-profile',
-  templateUrl: './profile.component.html',
-  styleUrls: ['./profile.component.scss']
+  selector: 'app-career',
+  templateUrl: './career.component.html',
+  styleUrls: ['./career.component.scss']
 })
-export class ProfileComponent implements OnInit {
+export class CareerComponent implements OnInit {
 
   check_login:Boolean = false;
   user_data : any;

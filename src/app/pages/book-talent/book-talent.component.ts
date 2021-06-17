@@ -1,12 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute,Router } from '@angular/router';
+// 0659595788 mpho
 
 @Component({
-  selector: 'app-profile',
-  templateUrl: './profile.component.html',
-  styleUrls: ['./profile.component.scss']
+  selector: 'app-book-talent',
+  templateUrl: './book-talent.component.html',
+  styleUrls: ['./book-talent.component.scss']
 })
-export class ProfileComponent implements OnInit {
+export class BookTalentComponent implements OnInit {
 
   check_login:Boolean = false;
   user_data : any;
@@ -33,5 +34,5 @@ export class ProfileComponent implements OnInit {
     localStorage.removeItem("user_data");
     this.router.navigate(['']);
   }
-
+  
 }
