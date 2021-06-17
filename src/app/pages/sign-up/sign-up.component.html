@@ -39,8 +39,18 @@
                 <input class="form-control" type="text" [(ngModel)]="sign_up.surname"></li>
                 <li class="item"><label class="signin_label" style="padding-right: 137px;">Company Name&nbsp;:&nbsp;</label>
                 <input class="form-control" type="text" [(ngModel)]="sign_up.company_name"></li>
-                <li class="item"><label class="signin_label" style="padding-right: 250px;">Email&nbsp;:&nbsp;</label>
-                <input class="form-control" type="text" [(ngModel)]="sign_up.email"></li>
+                <li class="item">
+                    <label class="signin_label" style="padding-right: 250px;">Email&nbsp;:&nbsp;</label>
+                    <input class="form-control" type="text" [(ngModel)]="sign_up.email"></li>
+                <li class="item">
+                    <label class="signin_label" style="padding-right: 200px;">Password&nbsp;:&nbsp;</label>
+                    <input class="form-control" type="password" [(ngModel)]="sign_up.password"></li>
+                <li class="item">
+                    <label class="signin_label" style="padding-right: 95px;">Re-enter Password&nbsp;:&nbsp;</label>
+                    <input class="form-control" type="password" [(ngModel)]="password" (keypress)="checkPasswordMatch()"/></li>
+                <li class="item" *ngIf="checkPassword">
+                    <label class="" style="padding-right: 250px;color: red;">Passwords do not match</label>
+                    </li>
                 <li class="item"><label class="signin_label" style="padding-right: 255px;">D.O.B&nbsp;:&nbsp;</label>
                 <input class="form-control" type="text" [(ngModel)]="sign_up.dob"></li>
                 <li class="item"><label class="signin_label" style="padding-right: 228px;">Gender&nbsp;:&nbsp;</label>
@@ -104,6 +114,18 @@
                                 <option>Wildlife</option>
                                 <option>Wedding</option>
                             </select></li>
+                            <li class="item">
+                                <label class="signin_label" style="padding-right: 200px;">User&nbsp;Type&nbsp;:&nbsp;</label>
+                                <select [(ngModel)]="sign_up.user_type">
+                                    <option></option>
+                                    <option>Photographer</option>
+                                    <option>User</option>
+                                </select>
+                            </li>
+                            <li class="item">
+                                <label class="signin_label" style="padding-right: 160px;">Profile&nbsp;Image&nbsp;:&nbsp;</label>
+                                <input class="form-control" type="file" (change)="onFileSelect($event)" [(ngModel)]="sign_up.profile_img">
+                            </li>
             </ul>
             <button type="button" class="btn bt__2 sign_btn" (click)="submit()">Submit</button>
             <button type="button" class="btn bt__2 sign_btn" (click)="clear()">Clear</button>

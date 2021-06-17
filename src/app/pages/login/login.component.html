@@ -34,9 +34,9 @@
         <div>
             <ul style="padding:10px;">
                 <li class="item"><label class="signin_label" style="padding-right: 250px;">Username&nbsp;:&nbsp;</label>
-                    <input class="form-control" type="text" [(ngModel)]="username"></li>
+                    <input class="form-control" type="text" [(ngModel)]="login.username"></li>
                 <li class="item"><label class="signin_label" style="padding-right: 250px;">Password&nbsp;:&nbsp;</label>
-                    <input class="form-control" type="password" [(ngModel)]="password"></li>                
+                    <input class="form-control" type="password" [(ngModel)]="login.password"></li>                
             </ul>
             <button type="button" class="btn bt__2 sign_btn" (click)="submit()">Submit</button>
             <button type="button" class="btn bt__2 sign_btn" (click)="clear()">Clear</button>

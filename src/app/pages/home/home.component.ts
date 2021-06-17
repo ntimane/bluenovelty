@@ -1,3 +1,4 @@
+import { ConstantPool } from '@angular/compiler';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute,Router } from '@angular/router';
 
@@ -32,15 +33,29 @@ export class HomeComponent implements OnInit {
       thumbImage: 'http://localhost:4200/assets/images/photographer-selecting-photos-RZPRBXK.jpg'
       // title: 'Example two with title.'
   }];
-
+  check_login:Boolean = false;
+  user_data : any;
+  jwt : any;
   constructor(private router: Router) {}
   ngOnInit() {
-    //get advert gallery
+    this.user_data = localStorage.getItem("user_data");
+    this.jwt = localStorage.getItem("jwt");
+    if(this.user_data){
+      console.log(this.user_data);
+      this.check_login = true;
+    }else{
+      this.check_login = false;
+    }
     
   }
   nav(value:string){
     console.log(value);
     this.router.navigate([value]);
+  }
+  logout(){
+    localStorage.removeItem("jwt");
+    localStorage.removeItem("user_data");
+    this.router.navigate(['']);
   }
 
 }

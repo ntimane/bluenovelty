@@ -9,7 +9,9 @@ import { ApiGatewayService } from 'src/app/services/api-gateway.service';
 })
 export class SignUpComponent implements OnInit {
 
-  constructor(private router: Router,private api: ApiGatewayService) { }
+  constructor(private router: Router,private _api: ApiGatewayService) { }
+  checkPassword:Boolean = false;
+  password:string ='';
   sign_up = {
     name:'',
     surname:'',
@@ -20,11 +22,21 @@ export class SignUpComponent implements OnInit {
     content_type:'',
     which_photography:'',
     which_photography1:'',
+    profile_img: File,
+    user_type:'',
+    password:'',
   }
   ngOnInit(){
   }
   nav(myNavigator=''){
     this.router.navigate([myNavigator]);
+  }
+  checkPasswordMatch(){    
+    if (this.sign_up.password != this.password) {
+      this.checkPassword = false;
+    }else{
+      this.checkPassword = true;
+    }
   }
   clear(){
     this.sign_up.name='';
@@ -36,21 +48,44 @@ export class SignUpComponent implements OnInit {
     this.sign_up.content_type='';
     this.sign_up.which_photography='';
     this.sign_up.which_photography1='';
+    // this.sign_up.profile_img=null;
+    this.sign_up.user_type='';
+    this.sign_up.password='';
+    this.password='';
   }
-  submit(){
-    // await this.api.submitSignup
-    try {
-      let res = fetch('http://localhost:4200/api/sign_up.php', {
-        method: 'POST',
-        body: JSON.stringify(this.sign_up)
-      }).then(response => response.json()).catch(err => {
-        // this.alertProvider.presentAlert(this._generals.getGeneralError()["heading"], this._generals.getGeneralError()["mainMessage"]);
-      })
+  onFileSelect(event:any) {
+    this.sign_up.profile_img= event.target.files;
+    // this.type = this.params.fileToUpload.name.split('.').pop();
+    // if (this.type === "jpeg" || this.type === "jpg" || this.type === "pdf") {
+    //   this.invalidFile = false;
+    // }else{
+    //   this.invalidFile = true;
+    // }
+    // if(this.invalidFile){
+    //   alert("Please make sure you have uploaded a .jpeg or .jpg or pdf file");
+    //   this.params.fileToUpload =null;
+    // }
+    // console.log(this.invalidFile+" : "+this.type);
+  }
 
-      // return res;
-    } catch (error) {
-      console.log(error);
-    }
+  submit(){
+    this._api.login(this.sign_up).then(res => {
+      console.log(res);
+      if(res.Status){
+        alert(res.Message);
+        localStorage.setItem("jwt",res.jwt);
+        localStorage.setItem("user_data",res.Data);
+        if(res.Data.user_type == "Photographer"){
+          this.router.navigate(['']);
+        }else{
+          this.router.navigate(['profile']);
+        }
+      }else{
+        alert(res.Message);
+      }
+    }).catch(err=>{
+      alert('Could not process your request now, try again: '+err);
+    })
   }
 
 }

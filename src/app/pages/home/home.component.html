@@ -14,7 +14,7 @@
   </div>
                       <div class="menu_block">
                           <nav class="horizontal-nav full-width horizontalNav-notprocessed">
-                              <ul class="sf-menu">
+                              <ul class="sf-menu" *ngIf="!check_login">
                                   <!--<li><a class="btn btn-primary" (click)="nav('login')">LOGIN</a></li>
                                   <li><a class="btn btn-primary" (click)="nav('sign-up')">SIGN UP</a></li>
                                   <li><a (click)="nav('sign-up')">PHOTOGRAPHERS</a></li>
@@ -24,6 +24,9 @@
                                   <li><a (click)="nav('sign-up')">PHOTOGRAPHERS</a></li>
                                   <li><a  (click)="nav('sign-up')">HOW TO REGISTER</a></li>
                               </ul>
+                              <ul class="sf-menu" *ngIf="check_login">
+                                <li><a (click)="logout()">LOGOUT </a></li>
+                            </ul>
                           </nav>
                           <div class="clear"></div>
                       </div>
@@ -47,7 +50,7 @@
       </div><br><br>
 
       <!--=====================Content======================-->
-<center>
+<!-- <center> -->
  <div class="gallery_main">
    <div class="gallery2">
 
@@ -92,7 +95,7 @@
 
 </div>
 </div>
-</center>
+<!-- </center> -->
   <br>
     <hr>
     <br>

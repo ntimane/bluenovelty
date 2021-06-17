@@ -40,30 +40,7 @@ export class AppComponent {
   ngOnInit() {
     //get advert gallery
     this.adGallery = [{name:'img1',src:'source'},{name:'img1',src:'source'}];
-    (<any>$(document)).ready(function(){
-      (<any>$('#camera_wrap')).camera({
-        loader: false,
-        pagination: false ,
-        minHeight: '200',
-        thumbnails: false,
-        height: '39,0625%',
-        caption: true,
-        navigation: true,
-        fx: 'mosaic'
-      });
-      var owl = $("#owl");
-      (<any>owl).owlCarousel({
-        items : 7, //10 items above 1000px browser width
-        itemsDesktop : [995,5], //5 items between 1000px and 901px
-        itemsDesktopSmall : [767, 3], // betweem 900px and 601px
-        itemsTablet: [700, 3], //2 items between 600 and 0
-        itemsMobile : [479, 2], // itemsMobile disabled - inherit from itemsTablet option
-        navigation : true,
-      });
-      (<any>$()).UItoTop({ easingType: 'easeOutQuart' });
-      (<any>$('#stuck_container')).tmStickUp({});
-      (<any>$('.gallery a.gal_item')).touchTouch();
-    });
+    
   }
   nav(value:string){
     console.log(value);
